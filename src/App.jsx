@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './theme.js';
 
+import { ToggleThemeButton } from './styles/Button.styled.jsx';
+
 import moonIcon from './assets/moon.svg';
 import sunIcon from './assets/sun.svg';
 
@@ -33,13 +35,13 @@ const App = () => {
       <>
         <GlobalStyles />
         <h1>Text test!</h1>
-        <button onClick={toggleTheme}>
+        <ToggleThemeButton onClick={toggleTheme}>
           {isDarkTheme ? (
             <img src={sunIcon} alt="Light theme icon" />
           ) : (
             <img src={moonIcon} alt="Dark theme icon" />
           )}
-        </button>
+        </ToggleThemeButton>
       </>
     </ThemeProvider>
   );
