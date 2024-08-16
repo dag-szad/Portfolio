@@ -19,17 +19,19 @@ export const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
-  * {
-    font-family: 'Nunito Sans', sans-serif;
-  }
-
   body {
     background: ${({ theme }) => theme.body};
     background-image: url(${({ theme }) => theme.backgroundImage});
-
+    
     color: ${({ theme }) => theme.text};
+    font-family: 'Nunito Sans', sans-serif;
 
     transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 `;
 
@@ -37,10 +39,12 @@ export const lightTheme = {
   body: '#F9F3DE',
   backgroundImage: noiseLight,
   text: '#272424',
+  fill: '#272424',
 };
 
 export const darkTheme = {
   body: '#272424',
   backgroundImage: noiseDark,
   text: '#F9F3DE',
+  fill: '#F9F3DE',
 };
