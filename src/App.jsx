@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './theme.js';
 
 import { ToggleThemeButton } from './styles/Button.styled.jsx';
+import { Header } from './components/molecules/Header.jsx';
 
 import moonIcon from './assets/moon.svg';
 import sunIcon from './assets/sun.svg';
@@ -34,7 +35,7 @@ const App = () => {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
         <GlobalStyles />
-        <h1>Text test!</h1>
+        <Header theme={theme} />
         <ToggleThemeButton onClick={toggleTheme}>
           {isDarkTheme ? (
             <img src={sunIcon} alt="Light theme icon" />
