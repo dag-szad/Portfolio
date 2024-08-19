@@ -7,6 +7,7 @@ import { Header } from './components/molecules/Header.jsx';
 
 import moonIcon from './assets/moon.svg';
 import sunIcon from './assets/sun.svg';
+import { Banner } from './components/molecules/Banner.jsx';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -36,6 +37,7 @@ const App = () => {
       <>
         <GlobalStyles />
         <Header theme={theme} />
+        <Banner theme={theme} />
         <ToggleThemeButton onClick={toggleTheme}>
           {isDarkTheme ? (
             <img src={sunIcon} alt="Light theme icon" />
