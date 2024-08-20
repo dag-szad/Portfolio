@@ -1,0 +1,25 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Web Studio",
+        "repo": "https://github.com/dag-szad/WebStudio",
+        "demo": "https://dag-szad.github.io/WebStudio/",
+        "tags": ["HTML", "CSS", "Sass", "JavaScript"],
+        "shortDescription": "short desc",
+        "longDescription": "long desc",
+        "screenshots": []
+      },
+      {
+        "id": 2,
+        "name": "Anemone",
+        "repo": "https://github.com/dag-szad/Anemone",
+        "demo": "https://dag-szad.github.io/Anemone/",
+        "tags": ["HTML", "CSS", "Sass", "JavaScript"],
+        "shortDescription": "short desc",
+        "longDescription": "long desc",
+        "screenshots": []
+      }
+    ]
+  }
+  
