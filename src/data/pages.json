@@ -8,7 +8,7 @@
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
         "shortDescription": "short desc",
         "longDescription": "long desc",
-        "screenshots": []
+        "screenshots": ["/images/webstudio_1"]
       },
       {
         "id": 2,
@@ -18,7 +18,17 @@
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
         "shortDescription": "short desc",
         "longDescription": "long desc",
-        "screenshots": []
+        "screenshots": ["/images/anemone_1.png"]
+      },
+      {
+        "id": 3,
+        "name": "BarberShop",
+        "repo": "https://github.com/dag-szad/BarberShop",
+        "demo": "https://dag-szad.github.io/BarberShop/",
+        "tags": ["HTML", "CSS", "Tailwind", "Typescript"],
+        "shortDescription": "short desc",
+        "longDescription": "long desc",
+        "screenshots": ["/images/barbershop_1.png"]
       }
     ]
   }
