@@ -8,7 +8,7 @@
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
         "shortDescription": "short desc",
         "longDescription": "long desc",
-        "screenshots": ["/images/webstudio_1"]
+        "screenshots": ["src/images/webstudio_1.png"]
       },
       {
         "id": 2,
@@ -18,7 +18,7 @@
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
         "shortDescription": "short desc",
         "longDescription": "long desc",
-        "screenshots": ["/images/anemone_1.png"]
+        "screenshots": ["src/images/anemone_1.png"]
       },
       {
         "id": 3,
@@ -28,7 +28,7 @@
         "tags": ["HTML", "CSS", "Tailwind", "Typescript"],
         "shortDescription": "short desc",
         "longDescription": "long desc",
-        "screenshots": ["/images/barbershop_1.png"]
+        "screenshots": ["src/images/barbershop_1.jpg"]
       }
     ]
   }
