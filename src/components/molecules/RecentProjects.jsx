@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ProjectCard } from '../atoms/ProjectCard';
 
 import data from '../../data/pages.json';
 
 const RecentProjects = () => {
+
   return (
     <div>
       {data.projects.slice(0, 3).map((project, index) => (
