@@ -6,7 +6,7 @@
         "repo": "https://github.com/dag-szad/WebStudio",
         "demo": "https://dag-szad.github.io/WebStudio/",
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
-        "shortDescription": "short desc",
+        "shortDescription": "Static portfolio website build with HTML, Sass and JavaScript.",
         "longDescription": "long desc",
         "screenshots": ["src/images/webstudio_1.png"]
       },
@@ -16,7 +16,7 @@
         "repo": "https://github.com/dag-szad/Anemone",
         "demo": "https://dag-szad.github.io/Anemone/",
         "tags": ["HTML", "CSS", "Sass", "JavaScript"],
-        "shortDescription": "short desc",
+        "shortDescription": "Single page website for florist business.",
         "longDescription": "long desc",
         "screenshots": ["src/images/anemone_1.png"]
       },
@@ -26,7 +26,7 @@
         "repo": "https://github.com/dag-szad/BarberShop",
         "demo": "https://dag-szad.github.io/BarberShop/",
         "tags": ["HTML", "CSS", "Tailwind", "Typescript"],
-        "shortDescription": "short desc",
+        "shortDescription": "Single page build with HTML and Tailwind CSS.",
         "longDescription": "long desc",
         "screenshots": ["src/images/barbershop_1.jpg"]
       }

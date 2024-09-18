@@ -39,7 +39,7 @@ const App = () => {
         <GlobalStyles />
         <Header theme={theme} />
         <Banner theme={theme} />
-        <RecentProjects />
+        <RecentProjects theme={theme}/>
         <ToggleThemeButton onClick={toggleTheme}>
           {isDarkTheme ? (
             <img src={sunIcon} alt="Light theme icon" />
