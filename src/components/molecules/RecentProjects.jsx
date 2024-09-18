@@ -3,12 +3,13 @@ import { ProjectCard } from '../atoms/ProjectCard';
 
 import data from '../../data/pages.json';
 
-const RecentProjects = () => {
+const RecentProjects = (theme) => {
 
   return (
-    <div>
+    <LocalContainer>
       {data.projects.slice(0, 3).map((project, index) => (
         <ProjectCard
+          theme={theme}
           key={index}
           name={project.name}
           demo={project.demo}
@@ -17,8 +18,15 @@ const RecentProjects = () => {
           screenshot={project.screenshots[0]}
         />
       ))}
-    </div>
+    </LocalContainer>
   );
 };
+
+const LocalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+`
 
 export { RecentProjects };
