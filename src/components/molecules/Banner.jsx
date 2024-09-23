@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
+import { MainButton } from '../../styles/Button.styled';
 
 const colors = {
   light: '#272424',
@@ -22,9 +24,9 @@ const Banner = ({ theme }) => {
           a developer and contribute to innovative projects.
         </Text>
       </LocalContainer>
-      <LocalButton theme={theme}>
+      <MainButton theme={theme}>
         <Link to="/about">about me</Link>
-      </LocalButton>
+      </MainButton>
     </BannerContainer>
   );
 };
@@ -73,26 +75,6 @@ const Text = styled.p`
   font-size: 1rem;
   max-width: 550px;
   margin: 0;
-`;
-
-const LocalButton = styled.button`
-  background: none;
-  outline: none;
-  padding: 10px 35px;
-
-  border: 1px solid
-    ${({ theme }) => (theme === 'light' ? colors.light : colors.dark)};
-  border-radius: 5px;
-
-  color: ${({ theme }) => (theme === 'light' ? colors.light : colors.dark)};
-  transition: background-color 0.3s ease-in-out;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${({ theme }) =>
-      theme === 'light' ? colors.lightTransparent : colors.darkTransparent};
-  }
 `;
 
 export { Banner };
