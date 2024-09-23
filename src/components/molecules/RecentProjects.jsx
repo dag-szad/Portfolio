@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { ProjectCard } from '../atoms/ProjectCard';
-
 import data from '../../data/pages.json';
 
-const RecentProjects = () => {
+import styled from 'styled-components';
+import { ProjectCard } from '../atoms/ProjectCard';
+import { MainButton } from '../../styles/Button.styled';
+
+const RecentProjects = (theme) => {
   return (
-    <div>
+    <LocalContainer>
       {data.projects.slice(0, 3).map((project, index) => (
         <ProjectCard
+          theme={theme}
           key={index}
           name={project.name}
           demo={project.demo}
@@ -17,8 +19,20 @@ const RecentProjects = () => {
           screenshot={project.screenshots[0]}
         />
       ))}
-    </div>
+      <MainButton theme={theme}>
+        <Link to="/portfolio">portfolio</Link>
+      </MainButton>
+    </LocalContainer>
   );
 };
+
+const LocalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  
+  margin: 50px auto;
+`;
 
 export { RecentProjects };
