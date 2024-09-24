@@ -19,12 +19,12 @@ const ProjectCard = ({
         <p>{shortDescription}</p>
         <MainButton theme={theme}>
           <a href={demo} target="_blank" rel="noopener noreferrer">
-            Demo
+            demo
           </a>
         </MainButton>
         <MainButton theme={theme}>
           <a href={repo} target="_blank" rel="noopener noreferrer">
-            Repository
+            repository
           </a>
         </MainButton>
       </div>

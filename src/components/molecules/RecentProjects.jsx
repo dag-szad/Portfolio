@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { ProjectCard } from '../atoms/ProjectCard';
 import { MainButton } from '../../styles/Button.styled';
 
-const RecentProjects = (theme) => {
+const RecentProjects = ({ theme }) => {
   return (
     <LocalContainer>
       {data.projects.slice(0, 3).map((project, index) => (
@@ -31,7 +31,7 @@ const LocalContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  
+
   margin: 50px auto;
 `;
 
