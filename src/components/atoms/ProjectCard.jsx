@@ -39,7 +39,6 @@ const LocalContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 50px;
-  width: 80%;
 `;
 
 const ProjectImage = styled.img`
