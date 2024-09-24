@@ -17,16 +17,14 @@ const ProjectCard = ({
       <div>
         <h2>{name}</h2>
         <p>{shortDescription}</p>
-        <MainButton theme={theme}>
+        <ButtonContainer>
           <a href={demo} target="_blank" rel="noopener noreferrer">
-            Demo
+            <MainButton theme={theme}>demo</MainButton>
           </a>
-        </MainButton>
-        <MainButton theme={theme}>
           <a href={repo} target="_blank" rel="noopener noreferrer">
-            Repository
+            <MainButton theme={theme}>repository</MainButton>
           </a>
-        </MainButton>
+        </ButtonContainer>
       </div>
     </LocalContainer>
   );
@@ -37,11 +35,15 @@ const LocalContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 50px;
-  width: 80%;
 `;
 
 const ProjectImage = styled.img`
   max-width: 40vw;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 25px;
 `;
 
 export { ProjectCard };

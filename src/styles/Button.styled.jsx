@@ -19,6 +19,7 @@ const MainButton = styled.button`
   background: none;
   outline: none;
   padding: 10px 35px;
+  max-width: 150px;
 
   border: 1px solid
     ${({ theme }) => (theme === 'light' ? colors.light : colors.dark)};
