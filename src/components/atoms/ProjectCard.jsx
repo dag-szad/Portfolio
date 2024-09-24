@@ -18,16 +18,12 @@ const ProjectCard = ({
         <h2>{name}</h2>
         <p>{shortDescription}</p>
         <ButtonContainer>
-          <MainButton theme={theme}>
-            <a href={demo} target="_blank" rel="noopener noreferrer">
-              demo
-            </a>
-          </MainButton>
-          <MainButton theme={theme}>
-            <a href={repo} target="_blank" rel="noopener noreferrer">
-              repository
-            </a>
-          </MainButton>
+          <a href={demo} target="_blank" rel="noopener noreferrer">
+            <MainButton theme={theme}>demo</MainButton>
+          </a>
+          <a href={repo} target="_blank" rel="noopener noreferrer">
+            <MainButton theme={theme}>repository</MainButton>
+          </a>
         </ButtonContainer>
       </div>
     </LocalContainer>
@@ -48,6 +44,6 @@ const ProjectImage = styled.img`
 const ButtonContainer = styled.div`
   display: flex;
   gap: 25px;
-`
+`;
 
 export { ProjectCard };
